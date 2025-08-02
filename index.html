@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProBot Fake Credit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form">
+    <input id="avatar" type="text" placeholder="Sender Avatar URL">
+    <input id="username" type="text" placeholder="Sender Name (e.g. SUPER)">
+    <input id="date" type="text" placeholder="Date & Time (e.g. 01/22/2025 3:52 PM)">
+    <input id="command" type="text" placeholder="Command (e.g. c @mention 7500000)">
+    <input id="botname" type="text" placeholder="Bot Sender Name (e.g. s5_r)">
+    <input id="amount" type="number" placeholder="Amount Transferred">
+    <input id="receiver" type="text" placeholder="Receiver Name (e.g. @Ahmed)">
+    <button id="generateBtn">🎨 Generate</button>
+    <button id="downloadBtn">💾 Download</button>
+  </div>
+
+  <div id="capture" class="message-box">
+    <div class="user-line">
+      <img id="userAvatarImg" src="https://cdn.discordapp.com/embed/avatars/0.png" />
+      <div class="text">
+        <div><span class="username" id="userName">SUPER</span> <span class="time" id="userTime">01/22/2025 3:52 PM</span></div>
+        <div class="command" id="userCommand">c @Pablo 7500000</div>
+      </div>
+    </div>
+
+    <div class="bot-line">
+      <img src="https://cdn.discordapp.com/avatars/282859044593598464/7a1282c58e445b7344a5ad9fbe57b41f.png" />
+      <div class="text">
+        <div>
+          <span class="botname">ProBot ✨</span>
+          <span class="tag">✅ APP</span>
+          <span class="time" id="botTime">01/22/2025 3:52 PM</span>
+        </div>
+        <div class="reply" id="botReply">
+          💰 | s5_r, has transferred <b>$7500000</b> to <span class="mention">@Pablo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
